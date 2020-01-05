@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Microsoft.Practices.Unity;
+using Microsoft.Practices.Unity.Configuration;
+using SolidPrinciples.DIP.IoCContainer.DocStorage;
+using SolidPrinciples.DIP.IoCContainer.Parsers;
+using SolidPrinciples.DIP.IoCContainer.Serializers;
+using System;
 using System.Configuration;
 using System.IO;
-using Microsoft.Practices.Unity;
-using Microsoft.Practices.Unity.Configuration;
 
 namespace SolidPrinciples.DIP.IoCContainer
 {
@@ -12,8 +15,8 @@ namespace SolidPrinciples.DIP.IoCContainer
         {
             var sourceFileName = Path.Combine(Environment.CurrentDirectory, "..\\..\\..\\Input Documents\\Document1.xml");
             var targetFileName = Path.Combine(Environment.CurrentDirectory, "..\\..\\..\\Output Documents\\Document1.json");
-            //var sourceFileName = "http://chris.59north.com/Document1.xml";
-            //var targetFileName = "https://teched.blob.core.windows.net/converted-documents/Document1.json";
+            //var sourceFileName = "http://www.xyzsite.com/Document1.xml";
+            //var targetFileName = "https://abc.blob.core.windows.net/converted-documents/Document1.json";
             
             //var container = GetContainer();
             var container = ConfigureDeclarativelyContainer();

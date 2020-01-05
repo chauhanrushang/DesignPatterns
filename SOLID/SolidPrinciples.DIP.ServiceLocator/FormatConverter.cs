@@ -1,4 +1,7 @@
-﻿using System;
+﻿using SolidPrinciples.DIP.ServiceLocator.DocStorage;
+using SolidPrinciples.DIP.ServiceLocator.Parsers;
+using SolidPrinciples.DIP.ServiceLocator.Serializers;
+using System;
 using System.IO;
 
 namespace SolidPrinciples.DIP.ServiceLocator

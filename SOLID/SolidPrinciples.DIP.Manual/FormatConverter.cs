@@ -1,4 +1,7 @@
-﻿using System;
+﻿using SolidPrinciples.DIP.Manual.DocStorage;
+using SolidPrinciples.DIP.Manual.Parsers;
+using SolidPrinciples.DIP.Manual.Serializers;
+using System;
 using System.IO;
 
 namespace SolidPrinciples.DIP.Manual

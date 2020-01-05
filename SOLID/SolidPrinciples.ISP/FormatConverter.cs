@@ -1,4 +1,7 @@
-﻿using System;
+﻿using SolidPrinciples.ISP.DocStorage;
+using SolidPrinciples.ISP.Parsers;
+using SolidPrinciples.ISP.Serializers;
+using System;
 using System.Configuration;
 using System.IO;
 

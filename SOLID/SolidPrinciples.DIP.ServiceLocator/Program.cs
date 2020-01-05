@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Microsoft.Practices.Unity;
+using SolidPrinciples.DIP.ServiceLocator.DocStorage;
+using SolidPrinciples.DIP.ServiceLocator.Parsers;
+using SolidPrinciples.DIP.ServiceLocator.Serializers;
+using System;
 using System.Configuration;
 using System.IO;
-using Microsoft.Practices.Unity;
 
 namespace SolidPrinciples.DIP.ServiceLocator
 {
@@ -12,7 +15,7 @@ namespace SolidPrinciples.DIP.ServiceLocator
             var sourceFileName = Path.Combine(Environment.CurrentDirectory, "..\\..\\..\\Input Documents\\Document1.xml");
             var targetFileName = Path.Combine(Environment.CurrentDirectory, "..\\..\\..\\Output Documents\\Document1.json");
             //var sourceFileName = "http://chris.59north.com/Document1.xml";
-            //var targetFileName = "https://teched.blob.core.windows.net/converted-documents/Document1.json";
+            //var targetFileName = "https://abc.blob.core.windows.net/converted-documents/Document1.json";
 
             ConfigureServiceLocator();
             ConfigureStorage();   
